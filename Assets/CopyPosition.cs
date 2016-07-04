@@ -16,7 +16,7 @@ public class CopyPosition : MonoBehaviour
         targetLastPosition = target.position;
     }
 
-    void Update()
+    void LateUpdate()
     {
         transform.position = transform.position + ((target.position - targetLastPosition) * copyFactor);
 
