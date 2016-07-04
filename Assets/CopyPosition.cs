@@ -9,7 +9,6 @@ public class CopyPosition : MonoBehaviour
     private Transform target;
 
     private Vector3 targetLastPosition = Vector3.zero;
-    private float targetTravelDistance = 0f;
 
 
     void Start()
@@ -19,8 +18,6 @@ public class CopyPosition : MonoBehaviour
 
     void Update()
     {
-        targetTravelDistance = Vector3.Distance(target.position, targetLastPosition);
-
         transform.position = transform.position + ((target.position - targetLastPosition) * copyFactor);
 
         targetLastPosition = target.position;
