@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Skybox3D.unity
+- path: Assets/Skybox3D_Clouds.unity
   isLoaded: 1
   isActive: 1
